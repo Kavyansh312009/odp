@@ -22,7 +22,7 @@ function gotPoses(error,results){
         console.log("errorrrrrr");
     }
     console.log(results);
-    status1 = results;
+    objects = results;
 }
 function draw(){
     image(img,0,0,640,420);

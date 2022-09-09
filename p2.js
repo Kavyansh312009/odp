@@ -1,3 +1,6 @@
+img = "";
+objects = [];
+status1 = "";
 function preload(){
     img = loadImage("mc.jpg");
 }
@@ -17,6 +20,7 @@ function gotPoses(error,results){
         console.log("errorrrrrr");
     }
     console.log(results);
+    objects = results;
 }
 function draw(){
     image(img,0,0,640,420);
